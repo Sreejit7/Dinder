@@ -1,0 +1,51 @@
+.petlist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+.pet__item{
+  display: flex;
+  background-color: rgb(241, 237, 237);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 2px 3px 5px 0px rgb(1, 1, 80);
+}
+.pet__item:nth-child(even){
+  background-color: rgb(205, 255, 236);
+}
+.pet__item img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px 0px rgba(6, 1, 32, 0.856);
+}
+.pet__desc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.pet__desc h3{
+  color: rgb(194, 42, 42);
+  margin-bottom: 10px;
+}
+.pet__desc:nth-of-type(even) h3{
+  color: blue;
+}
+@media(max-width: 768px){
+  .pet__item{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,37 @@
+.card{
+  position: relative;
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  max-width: 60vw;
+  height: 50vh;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.cards__container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.swipe{
+  position: absolute;
+}
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+.icons > .MuiIconButton-root{
+  padding: 10px;
+  background-color: rgb(252, 249, 243);
+  box-shadow: 0px 0px 10px 0px rgba(201, 198, 198, 0.13);
+}
+.fav-icon{
+  color: red;
+}
+.close-icon{
+  color: black;
+}
